@@ -1,7 +1,7 @@
 package com.company;
 
 public class Horse extends Animal{
-    public String color;
+    private String color;
 
     public Horse(double weight, int age, String color, String gender, String nickName) {
         super(weight, age, gender, nickName);
