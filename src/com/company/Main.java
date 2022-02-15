@@ -30,6 +30,7 @@ public class Main {
         Sheep sheep4 = new Sheep(20.0,1,"male","Ak kozu");
         Cow cow6 = new Cow(150.0,2,"female","botokoz");
         Horse horse3 = new Horse(200.0,5,"brown","male","Teltoru");
+        horse3.setColor("grey");
 
         Sheep[] sheepFarm2 = {sheep4};
         Cow[] cowsFarm2 = {cow6};

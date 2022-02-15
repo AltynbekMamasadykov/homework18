@@ -1,34 +1,12 @@
 package com.company;
 
-public class Horse {
-    private double weight;
-    private int age;
+public class Horse extends Animal{
     public String color;
-    private String gender;
-    private String nickName;
 
     public Horse(double weight, int age, String color, String gender, String nickName) {
-        this.weight = weight;
-        this.age = age;
+        super(weight, age, gender, nickName);
         this.color = color;
-        this.gender = gender;
-        this.nickName = nickName;
-    }
 
-    public double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
     }
 
     public String getColor() {
@@ -39,30 +17,14 @@ public class Horse {
         this.color = color;
     }
 
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public String getNickName() {
-        return nickName;
-    }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
-
     @Override
     public String toString() {
-        return "Horse{" +
-                "weight=" + weight +
-                ", age=" + age +
-                ", color='" + color + '\'' +
-                ", gender='" + gender + '\'' +
-                ", nickName='" + nickName + '\'' +
+        return "Animal{" +
+                "weight=" + getWeight() +
+                ", age=" + getAge() +
+                ", color='" + getColor() +
+                ", gender='" + getGender() + '\'' +
+                ", nickName='" + getNickName() + '\'' +
                 '}';
     }
 }
